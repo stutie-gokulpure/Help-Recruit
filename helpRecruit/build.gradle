@@ -1,0 +1,27 @@
+subprojects{
+	apply plugin: 'java'
+	apply plugin: 'eclipse'
+
+	group = 'com.4Circles'
+	version = '0.0.1-SNAPSHOT'
+	sourceCompatibility = 1.8
+
+	compileJava.options.encoding = 'UTF-8'
+	
+	repositories {
+		mavenCentral()
+	}
+
+	configurations.all {
+	
+	}
+
+	dependencies {
+		compile 'com.fasterxml.jackson.core:jackson-core:2.6.2'
+		compile 'com.fasterxml.jackson.core:jackson-databind:2.6.2'
+	}
+	
+	task allDeps(type: DependencyReportTask) {}
+}
+
+
