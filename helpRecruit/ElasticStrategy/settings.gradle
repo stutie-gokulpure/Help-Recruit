@@ -1,0 +1,6 @@
+include 'IEntity', ':Entity', ':IModel', ':Model', 'IUsecase'
+project(':IEntity').projectDir = new File('../IEntity')
+project(':Entity').projectDir = new File('../Entity')
+project(':IModel').projectDir = new File('../IModel')
+project(':Model').projectDir = new File('../Model')
+project(':IUsecase').projectDir = new File('../IUsecase')

@@ -1,0 +1,2 @@
+include 'IModel'
+project(':IModel').projectDir = new File('../IModel')

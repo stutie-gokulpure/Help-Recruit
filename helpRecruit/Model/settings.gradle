@@ -1,0 +1,4 @@
+include 'IEntity', ':Entity', ':IModel'
+project(':IEntity').projectDir = new File('../IEntity')
+project(':Entity').projectDir = new File('../Entity')
+project(':IModel').projectDir = new File('../IModel')

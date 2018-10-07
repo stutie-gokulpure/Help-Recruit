@@ -1,5 +1,5 @@
 package com.Circles.helpRecruit.entity;
 
-public interface ICandidate {
+public interface ICandidate extends IEntity {
 
 }

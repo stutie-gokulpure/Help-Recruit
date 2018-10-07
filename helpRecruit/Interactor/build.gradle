@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	
+	def springFrameworkVersion = "4.3.5.RELEASE"
+	
+	compile project(path: ':IEntity')
+	compile project(path: ':Entity')
+	compile project(path: ':IModel')
+	compile project(path: ':Model')
+	compile project(path: ':IUsecase')
+	
+	compile "org.springframework:spring-context:${springFrameworkVersion}"
+    compile "org.springframework:spring-core:${springFrameworkVersion}"
+}

@@ -1,1 +1,1 @@
-include 'IEntity', 'REST'
+include 'IEntity', 'REST', 'Entity','IModel','Model', 'ElasticStrategy','Interactor', 'IUsecase'
